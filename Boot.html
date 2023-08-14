@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+          background-color: #f4f4f4;
+        }
+        .header {
+          background-color: #333;
+          color: #fff;
+          padding: 1rem;
+          text-align: center;
+        }
+        .table-responsive {
+          margin-top: 2rem;
+        }
+        .registration-form {
+          margin-top: 2rem;
+          background-color: #fff;
+          padding: 2rem;
+          border-radius: 5px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+          margin-top: 2rem;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="event logo.jpg" alt="Event Logo" class="img-fluid" style="max-width : 200px">
+    <h1>Event Management</h1>
+    <p>Join us for an inspiring tech event!</p>
+</div>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered, table-striped table-hover table-dark" >
+            <thead class="thead-dark">
+            <tr>
+                <th>Session Name</th>
+                <th>Speaker</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Session1</td>
+                <td>Moien</td>
+                <td>20-08-2023</td>
+                <td>10:00 pm</td>
+            </tr>
+            <tr>
+                <td>Session2</td>
+                <td>Khalid</td>
+                <td>10-08-2023</td>
+                <td>10:00 pm</td>
+            </tr>
+            <tr>
+                <td>Session3</td>
+                <td>Maliha</td>
+                <td>15-08-2023</td>
+                <td>10:00 am</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="registration-form, was-validated">
+        <h2>Register Now</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" placeholder="Enter name" id="name" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="organization">Organization</label>
+                <input type="text" class="form-control" placeholder="Enter organization name" id="organization" required>
+            </div>
+            <div class="form-group">
+                <label for="session">Preferred Session</label>
+                <select class="form-control" id="session">
+                    <option value="session1">Session 1</option>
+                    <option value="session2">Session 2</option>
+                    <option value="session3">Session 3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="alert('Data successfully submitted')">Register</button>
+        </form>
+    </div>
+</div>
+
+<p id="demo"></p>
+
+<footer class="bg-dark text-white py-5 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Event Details</h5>
+                <p>Session1<br>
+                    Date:20-08-2023 at 10:00pm<br>
+                    Location: Dhaka
+                </p>
+                <br>
+                <p>Session2<br>
+                    Date:10-08-2023 at 10:00pm<br>
+                    Location: Dhaka
+                </p>
+                <br>
+                <p>Session3<br>
+                    Date:15-08-2023 at 10:00am<br>
+                    Location: Dhaka
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Information</h5>
+                <p>Email: event@events.com</p>
+                <p>Phone: +880 00000000</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Social Media</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Facebook</a></li>
+                    <li><a href="#" class="text-white">Twitter</a></li>
+                    <li><a href="#" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
